@@ -36,7 +36,11 @@ public class App {
         androidOwnerMobile.call("This is above the max length for iPhone");
         androidOwnerMobile.getInformation();
 
+        System.out.println("----------------------------------------");
 
+        IPhoneRobot iPhoneRobot = new IPhoneRobot();
+        iPhoneRobot.setMobile(android);
+        iPhoneRobot.setMobile(iPhone);
 
 
     }
