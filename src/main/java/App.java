@@ -38,10 +38,16 @@ public class App {
 
         System.out.println("----------------------------------------");
 
+        iPhoneOwner.setMobile(android);
+        Mobile formerIPhoneOwnerMobile = iPhoneOwner.getMobile();
+        formerIPhoneOwnerMobile.call("short message");
+        formerIPhoneOwnerMobile.call("This is above the max length for iPhone");
+        formerIPhoneOwnerMobile.getInformation();
+
+        System.out.println("----------------------------------------");
+
         IPhoneRobot iPhoneRobot = new IPhoneRobot();
         iPhoneRobot.setMobile(android);
         iPhoneRobot.setMobile(iPhone);
-
-
     }
 }
