@@ -10,20 +10,34 @@ public class App {
         Mobile iPhone = new IPhone();
         Mobile android = new Android();
 
-        iPhone.call("short message");
-        iPhone.call("This is above the max length for iPhone");
         iPhone.setName("iPhoneName");
         iPhone.setBrand("Apple");
         iPhone.setColor("Jet Black");
-        iPhone.getInformation();
-
-        System.out.println("");
-
-        android.call("short message");
-        android.call("This is above the max length for iPhone");
         android.setName("androidName");
         android.setBrand("Samsung");
         android.setColor("Black");
-        android.getInformation();
+
+
+        Person iPhoneOwner = new Person();
+        iPhoneOwner.setMobile(iPhone);
+
+        Mobile iPhoneOwnerMobile = iPhoneOwner.getMobile();
+        iPhoneOwnerMobile.call("short message");
+        iPhoneOwnerMobile.call("This is above the max length for iPhone");
+        iPhoneOwnerMobile.getInformation();
+
+        System.out.println("----------------------------------------");
+
+        Person androidOwner = new Person();
+        androidOwner.setMobile(android);
+
+        Mobile androidOwnerMobile = androidOwner.getMobile();
+        androidOwnerMobile.call("short message");
+        androidOwnerMobile.call("This is above the max length for iPhone");
+        androidOwnerMobile.getInformation();
+
+
+
+
     }
 }
