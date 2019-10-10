@@ -11,6 +11,15 @@ public class App {
         Mobile android = new Android();
 
         iPhone.call("wow");
+        iPhone.setName("iPhoneName");
+        iPhone.setBrand("Apple");
+        iPhone.setColor("Jet Black");
+        iPhone.getInformation();
+
         android.call("uwu");
+        android.setName("androidName");
+        android.setBrand("Samsung");
+        android.setColor("Black");
+        android.getInformation();
     }
 }
