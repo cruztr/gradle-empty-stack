@@ -10,13 +10,17 @@ public class App {
         Mobile iPhone = new IPhone();
         Mobile android = new Android();
 
-        iPhone.call("wow");
+        iPhone.call("short message");
+        iPhone.call("This is above the max length for iPhone");
         iPhone.setName("iPhoneName");
         iPhone.setBrand("Apple");
         iPhone.setColor("Jet Black");
         iPhone.getInformation();
 
-        android.call("uwu");
+        System.out.println("");
+
+        android.call("short message");
+        android.call("This is above the max length for iPhone");
         android.setName("androidName");
         android.setBrand("Samsung");
         android.setColor("Black");
