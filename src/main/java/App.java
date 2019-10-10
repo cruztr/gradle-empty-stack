@@ -7,6 +7,10 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Mobile iPhone = new IPhone();
+        Mobile android = new Android();
+
+        iPhone.call("wow");
+        android.call("uwu");
     }
 }
